@@ -1,0 +1,30 @@
+
+.banner{
+    background-image: url('https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?t=st=1740426746~exp=1740430346~hmac=f4027fba8cd2d554f0e98fb0535ad6886b7b1faa4ab283795da667b846a0ee4b&w=1060');
+    background-size: cover;
+    height: 600px;
+    color: rgb(58, 34, 58);
+}
+.content{
+    padding-top: 140px;
+    height: 190px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 8rem;
+}
+.description{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    height: 80px;
+    max-width: 560px;
+    margin-left: 30rem;
+}
+.fade{
+    height: 20rem;
+    background-image: linear-gradient(180deg,transparent,#c6e5f7,#7da5bd);
+    
+}
