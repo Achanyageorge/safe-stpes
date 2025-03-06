@@ -1,11 +1,12 @@
 import "./NavBar.css";
 import React, { useState } from "react";
+import myImage from "../../logo.png"; // Go up two levels to reach 'src'
 function NavBar() {
     const [searchTerm, setSearchTerm] = useState("");
     const [showLogin, setShowLogin] = useState(false);
   return (
     <div className='navbar'>
-       <img className="logo" src= "/logo.png" alt="safesteps" />
+       <img className="logo" src={myImage} alt="safesteps" />
        <input
         type="text"
         placeholder="Search..."
