@@ -1,12 +1,14 @@
 import "./NavBar.css";
 import React, { useState } from "react";
-import myImage from "../../logo.png"; // Go up two levels to reach 'src'
+import { useNavigate } from "react-router-dom";
+import myImage from "../../images/logo.png";// Go up two levels to reach 'src'
 function NavBar() {
     const [searchTerm, setSearchTerm] = useState("");
     const [showLogin, setShowLogin] = useState(false);
+    const navigate = useNavigate(); 
   return (
     <div className='navbar'>
-       <img className="logo" src={myImage} alt="safesteps" />
+       <img className="logo" src={myImage} alt="safesteps"  />
        <input
         type="text"
         placeholder="Search..."
@@ -15,7 +17,7 @@ function NavBar() {
         className="search-bar"
       />
     <button className="login-btn" onClick={() => setShowLogin(true)}>Login</button>
-    <h1 className="home">Home</h1>
+    <h1 className="home" onClick={() => navigate("/")}>Home</h1>
 
 {/* Login Form (Popup) */}
 {showLogin && (
@@ -33,5 +35,4 @@ function NavBar() {
     </div>
   )
 }
-
 export default NavBar

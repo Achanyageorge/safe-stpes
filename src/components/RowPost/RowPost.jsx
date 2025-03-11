@@ -1,7 +1,9 @@
 import React from 'react';
 import './RowPost.css';
-
+import SexEdu from '../SexEdu/SexEdu';
+import { useNavigate } from 'react-router-dom';
 function RowPost() {
+  const navigate = useNavigate();
   return (
     <div className="row">
       <h1 className='headline'>OUR SERVICES</h1>
@@ -44,7 +46,9 @@ function RowPost() {
           <p className="summary">
             Period Tracking helps individuals monitor their menstrual cycle, predict upcoming periods, and track symptoms like cramps or mood changes. A WhatsApp-integrated period tracker makes this process easier by sending reminders, predictions, and personalized health tips directly via chat.
           </p>
-          <button className="learn-more">Get Started</button>
+          <button className="learn-more" onClick={() => navigate('/sex-education')}>
+            Go to Sex Education
+          </button>
         </div>
       </div>
     </div>
