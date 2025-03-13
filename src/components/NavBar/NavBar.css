@@ -6,39 +6,37 @@
 .navbar{
   position: fixed;
   top: 0;    
-    width: 100%;
-    height: 3em;
-    display: flex;
-    justify-content: space-between;
-    background-color: #d4e0e7;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e2e2e6 /*#d4e0e7;*/
 }
 .logo{
   position: fixed;
   left: 1%;
   width: 10em;
   margin-top: -3em;
- 
 }
 .search-bar {
   width: 20em;
   margin-left: 60%;
-  border: 1px solid #ccc;
+  border: 1px solid  #ccc;
   border-radius: 5px;
   outline: none;
   font-size: 1em;
   height: 2em;
   margin-top: .5em;
-  }
+}
   
-  .search-bar:focus {
-    border-color: #007bff;
-  }
-  
-  .search-text {
-    font-size: 14px;
-    color: #555;
-  }
-  .login-btn {
+.search-bar:focus {
+  border-color: #007bff;
+}
+.search-text {
+  font-size: 14px;
+  color: #555;
+}
+.login-btn {
     background-color: rgb(58, 34, 58);
     color: white;
     border: none;
@@ -47,16 +45,13 @@
     border-radius: 5px;
     margin-right: 3em;
     margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding-top: 0.75em;
-  }
-  
-  .login-btn:hover {
+    margin-bottom: 0.5em;
+    padding-top: 0.75em;
+}
+.login-btn:hover {
     background-color: rgb(104, 42, 104);;
-  }
-  
-  /* Login Popup */
-  .login-popup {
+}
+.login-popup { /* Login Popup */
     position: fixed;
     top: 0;
     left: 0;
@@ -66,26 +61,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .login-form {
+}
+.login-form {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-  }
-  
+}
   .login-form input {
     width: 100%;
     padding: 8px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
   
-  .login-form button {
+.login-form button {
     width: 100%;
     padding: 8px;
     margin-top: 10px;
@@ -95,12 +88,10 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .login-form button:hover {
+.login-form button:hover {
     background-color: #0056b3;
-  }
-  
-  .close-btn {
+}
+.close-btn {
     background-color: red;
     margin-top: 10px;
-  }
+}

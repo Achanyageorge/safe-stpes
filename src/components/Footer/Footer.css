@@ -38,7 +38,6 @@
     color: black;
     text-decoration: none;
 }
-
 .footer-bottom a:hover {
     text-decoration: underline;
 }
@@ -46,8 +45,7 @@
     display: flex;
     align-items: center;
     background: #d4e0e7;
+    width: 100%;
     /*border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);*/
-    width: 100%;
-    
 }
